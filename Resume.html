@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Резюме — Норицин Владислав Максимович</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--muted:#6b7280}
+    .accent{color:#0f172a}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.4));backdrop-filter:blur(6px)}
+  </style>
+</head>
+<body class="bg-neutral-50 text-slate-800 antialiased">
+  <main class="max-w-4xl mx-auto p-8">
+    <header class="flex items-start gap-6 mb-6">
+      <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl font-bold">НВ</div>
+      <div>
+        <h1 class="text-3xl font-extrabold tracking-tight">ФИО: <span class="text-indigo-600">Норицин Владислав</span></h1>
+        <p class="text-sm text-gray-600 mt-1">Город: <strong>Пермь</strong> · Удалёнка · Готовность: неполный день (4–6 ч/день)</p>
+        <p class="mt-2 text-sm text-muted">Контакты: Телефон: <a>+7 (950) 450 41 30</a> · Telegram: <a href="https://t.me/dns_official_store" class="text-indigo-600">@dns_official_store</a> · Email: <a>v.noritsin@yandex.ru</a> · GitHub: <a href="https://github.com/V1adic" class="text-indigo-600">github.com/V1adic</a></p>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <aside class="md:col-span-1">
+        <div class="card p-4 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Ключевые навыки</h3>
+          <ul class="list-disc text-sm space-y-1 text-gray-700 ml-5 mt-2">
+            <li> C#, .NET 6, ASP.NET, Razor Pages</li>
+            <li> SignalR, Electron.NET, REST</li>
+            <li>PostgreSQL, SQLite, MS SQL, Oracle, MySQL, Firebird</li>
+            <li>SRP-6a, JWT, AES, SSL</li>
+            <li>Docker, VPN, DHCP, TailwindCSS</li>
+            <li>JavaScript, HTML, CSS</li>
+          </ul>
+        </div>
+
+        <div class="card p-4 rounded-xl shadow mt-4">
+          <h3 class="font-semibold mb-2">Образование</h3>
+          <p class="text-sm text-gray-700">Специалитет — Компьютерная безопасность (5 курс). Окончание через 1 год.</p>
+        </div>
+
+        <div class="card p-4 rounded-xl shadow mt-4">
+          <h3 class="font-semibold mb-2">Языки</h3>
+          <p class="text-sm text-gray-700">Русский — родной<br>Английский — B1 (чтение документации)</p>
+        </div>
+      </aside>
+
+      <div class="md:col-span-2">
+        <div class="card p-6 rounded-xl shadow">
+          <h2 class="text-xl font-bold mb-3">Обо мне</h2>
+          <p class="text-sm text-gray-700 leading-relaxed">Разработчик с ~3 годами опыта (фриланс + pet-проекты). Специализируюсь на backend-разработке на .NET, создании защищённых клиент‑серверных приложений и интеграции криптографических решений. Готов вливаться в команду на позиции Junior / Junior‑Middle (Backend .NET / Fullstack).</p>
+
+          <h2 class="text-lg font-semibold mt-6 mb-2">Опыт работы (ключевые проекты)</h2>
+
+          <article class="mb-4">
+            <h3 class="font-semibold">Корпоративный защищённый чат — Fullstack (самостоятельно)</h3>
+            <p class="text-sm text-gray-600">Стек: .NET 6, Electron.NET, SignalR, PostgreSQL, AES, SRP-6a, SSL, Docker</p>
+            <ul class="list-disc ml-5 mt-2 text-sm text-gray-700 space-y-1">
+              <li>Проектирование и реализация архитектуры клиент-серверного приложения</li>
+              <li>Авторизация по SRP-6a — без передачи пароля по сети</li>
+              <li>Выдача SSL-сертификатов через внутренний УЦ</li>
+              <li>Шифрование сообщений AES, обмен ключами после авторизации</li>
+              <li>Подключение пользователей через VPN + DHCP, развёртывание и поддержка на сервере заказчика</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3 class="font-semibold">AnimeGameSite (Pet-project)</h3>
+            <p class="text-sm text-gray-600">Стек: ASP.NET Razor Pages, SQLite, SignalR, TailwindCSS</p>
+            <ul class="list-disc ml-5 mt-2 text-sm text-gray-700 space-y-1">
+              <li>Регистрация (SRP-6a) и авторизация (JWT)</li>
+              <li>Блог с удобным UI для публикации администратором</li>
+              <li>Роли и управление пользователями через админ‑панель</li>
+              <li>Динамическая карусель концепт-артов через SignalR Hub</li>
+            </ul>
+            <p class="mt-3 text-sm">Репозиторий: <a href="https://github.com/V1adic/AnimeGameSite" class="text-indigo-600">github.com/V1adic/AnimeGameSite</a></p>
+          </article>
+
+        </div>
+
+        <div class="card p-6 rounded-xl shadow mt-4">
+          <h2 class="text-lg font-semibold mb-2">Цель и вакансии</h2>
+          <p class="text-sm text-gray-700">Ищу позицию Junior / Junior‑Middle: Backend .NET или Fullstack с возможностью удалённой работы или в моём регионе (Пермь). Готов к тестовым заданиям и собеседованиям.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
