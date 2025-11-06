@@ -12,7 +12,7 @@
       --card-bg:rgba(28,31,36,0.64);
       --text:#e6eef8;
       --muted:#9aa4b2;
-      --accent:#3556c8;        /* насыщенный тёмно-синий */
+      --accent:#3556c8;
       --accent-2:#5b74df;
       --glass-border: rgba(255,255,255,0.03);
     }
@@ -46,14 +46,13 @@
     }
     .animate-float { animation: floaty 4.5s ease-in-out infinite; }
 
-    /* subtle focus ring for keyboard users */
     a:focus { outline: none; box-shadow: 0 0 0 3px rgba(69,98,212,0.18); border-radius:6px; }
 
     /* small utility tweaks */
     .muted { color: var(--muted); }
     .accent { color: var(--accent); }
     .avatar-badge { background: linear-gradient(135deg,#2e3a8f,#7c5cff); }
-    /* responsive fix: ensure grid spans are correct */
+
   </style>
 </head>
 
@@ -75,10 +74,8 @@
         </div>
       </div>
     </header>
-
-    <!-- GRID: корректные span'ы — aside = 1, main = 2 (md+) -->
+    
     <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- LEFT -->
       <aside class="md:col-span-1 space-y-6">
         <div class="card p-5 rounded-xl animate-fadeUp">
           <h3 class="font-semibold text-lg mb-3">Ключевые навыки</h3>
@@ -103,7 +100,6 @@
         </div>
       </aside>
 
-      <!-- RIGHT / MAIN (справа занимает 2 колонки на md+) -->
       <div class="md:col-span-2 space-y-6">
 
         <div class="card p-6 rounded-xl animate-fadeUp">
@@ -147,7 +143,6 @@
           </p>
 
           <div class="mt-4 flex flex-wrap gap-2">
-            <!-- небольшие "теги" с hover-анимацией -->
             <span class="text-xs px-3 py-1 rounded-full bg-white/5 muted hover:bg-white/7 transition">Backend</span>
             <span class="text-xs px-3 py-1 rounded-full bg-white/5 muted hover:bg-white/7 transition">SignalR</span>
             <span class="text-xs px-3 py-1 rounded-full bg-white/5 muted hover:bg-white/7 transition">Docker</span>
@@ -160,3 +155,4 @@
   </main>
 </body>
 </html>
+
